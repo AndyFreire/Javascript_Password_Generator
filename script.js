@@ -54,7 +54,7 @@ function generatePassword(){
 
   //Generate a password the length requested by user
   for (var i = 0; i < passwordLength; i++){
-    newPassword = newPassword + newArray[Math.round(Math.random() * newArray.length)];
+    newPassword = newPassword + newArray[Math.floor(Math.random() * newArray.length)];
   }
 
   return newPassword;
